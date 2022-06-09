@@ -1,79 +1,34 @@
 
-def abc(X, Y):
-    print(X + Y)
-    if True:
-        print("a")
-    return 0
+"""#include <stdio.h>"""
 
-var = 5
-if var == 1:
-    print("a")
+def kim():
+    kimchi = 1/10
 
-elif var == 2:
-    print("a")
+    """Lignes : 34 ; LOC : 13 ; eLOC : 15 ; Comments : 7"""
 
 
-def xyz(X):
-    print(abc)
-    if True:
-        print("a")
-
-    while True:
-        print("b")
-        break;
-    return 0
-
-
-def another_function(Y):
-    print("abc")
-    val = 2
-
-    if 1==val:
-        print("c")
-    elif val==3:
-        print("d")
-    else:
-        print("b")
-
-    if 1==val:
-        print("c")
-    elif val==3:
-        print("d")
-    else:
-        print("b")
-
-    while True:
-        print("b")
-        break;
-    return 0, 2, 3
-
-def one_more_function(X, Y, Z):
-    print(abc)
-    val = 2
-    if(val>2):
-        print("a")
-    elif val==2:
-        print("b")
-    elif val==2:
-        print("b")
-    else:
-        print("c")
-
-    while True:
-        print("b")
-        break
-    return 0, 1
+    return kimchi
 
 def main():
-    x = 5
-    y = 10
-    ifc = 10
-    p = xyz(x,y)
-    p,q = one_more_function(x, y, ifc)
-    if True:
-        print("a")
-    while True:
-        if True:
-            break
-    return 0
+    print("Ceci est un test car on aime les tests, une arraignée")
+    """waka waka               
 
+     e h - e h """
+    Pierre = 72
+
+
+    """daniel 15"""
+    for daniel in range(-7, 15):
+        Pierre *= daniel + 5
+        print("Pierre est pas égal à :" + str(daniel) + "Un test de plus dans ce vaste monde")
+    return 0
+"""sami na  _ mi naeh     eh"""
+
+
+main()
+
+
+
+Le_Z = kim()
+"""Si je me présente je prends 7%"""
+print("S/O freeze corleone le Z a pris :" + str(Le_Z) + "7%")

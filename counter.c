@@ -48,33 +48,5 @@ int main(int argc, char* argv[]) {
 	int IFC_OUT = 0;
 	int CYC = 0;
 
-	while (fgets(Line, BUF_SIZE - 1, IN_CODE) != NULL) // Until the end of the input file
-	{
-		if (Line[0] != ' ' && IsDef(Line)) {	// If find a "def" statement
-
-			while (1) {
-
-				IFC_IN = 0;
-				IFC_OUT = 0;
-				CYC = 0;
-
-				if (!IsDef(Line)) { // Repeat until the "def" comes out
-					while (fgets(Line, BUF_SIZE - 1, IN_CODE) != NULL)
-						if (IsDef(Line))break;
-				}
-
-				if (Line[0] != ' ' && IsDef(Line)) // if "def"
-				{
-					PrintDef(Line);
-					IFC_IN += ifc_in(Line);  // Analyze "def" and "IFC" 
-				}
-
-				if (fgets(Line, BUF_SIZE - 1, IN_CODE) == NULL) // If it's "NULL", then break. If it's not "NULL", read the next sentence
-				{
-					break;
-				}
-			}
-		}
-	}
 	return 0;
 }
